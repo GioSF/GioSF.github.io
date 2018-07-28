@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MindStorms</title>
-</head>
+<!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+
+    <head>
+        <title>MindStorms</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
 <body>
 
-	<h1>Yeah</h1>
+    <div class="header">MindStorms</div>
+    <div class="menu">
+        <table>
+            <tr>
+                <th><div onclick="loadDoc()">Pesquisas</div></th>
+                <th><div class="item-menu" id="projetos">Projetos</div></th>
+            </tr>
+        </table>
+    </div>
+        <div class="texto" id="conteudo">
+            <p>sou Giovanni Stroppa, graduando em Sistemas de 
+            Informação pelo IFSudesteMG. esta é uma página sobre minhas pesquisas e projetos.</p>
+            <p>em "Pesquisas" escrevo sobre minha iniciação científica, publicações e as leituras que mais me interessam.</p>
+            <p>em "Projetos" estão códigos desenvolvidos em estudos pessoais e da faculdade.</p>
+            <p>email: giosfdev@gmail.com</p>
+        </div>
+<!--             <blockquote>Make other monospace text stand out!</blockquote>
+ -->
+<script>
+    function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("conteudo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax/pesquisas.html", true);
+  xhttp.send();
+}
+</script>
 
 </body>
 </html>
