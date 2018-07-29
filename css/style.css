@@ -9,11 +9,7 @@ div.header{
 	margin-top: -150px;
 	margin-left: -9px;
 	position:fixed;
-    text-shadow:
-    -3px -3px 0 #000,
-    0px 0px 0 #000,
-    0px 0px 0 #000,
-    3px 3px 0 #000;  
+  text-shadow: 0px 0px 5px #000;
 }
 
 div.header:hover{
@@ -30,11 +26,7 @@ div.menu{
 	margin-left: -10px;
 	font-family: monospace; 
 	position:fixed;
-    text-shadow:
-    -3px -3px 0 #000,
-    0px 0px 0 #000,
-    0px 0px 0 #000,
-    3px 3px 0 #000;  
+  text-shadow: 0px 0px 5px #000;
 }
 div.item-menu:hover 
 {
@@ -135,8 +127,9 @@ a.linkext:hover
 
 i{
     color: #fff;
-    text-shadow: 1px 1px 1px #ccc;
+    text-shadow: 0px 0px 0px #ccc;
     font-size: 1.5em;
+	margin-left: 5px;  
 }
 
 /* CSS - Cascading Style Sheet */
