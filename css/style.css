@@ -6,19 +6,39 @@ div.header{
     color: #FF6D4B;
 	font-size: 120px;
 	letter-spacing: -12px;
-	margin-top: -20px;
+	margin-top: -150px;
+	margin-left: -9px;
+	position:fixed;
+    text-shadow:
+    -3px -3px 0 #000,
+    0px 0px 0 #000,
+    0px 0px 0 #000,
+    3px 3px 0 #000;  
+}
+
+div.header:hover{
+     text-decoration:none; 
+     cursor:default;  
+
 }
 
 div.menu{
-    color: #38C06F;
+  color: #38C06F;
 	font-size: 30px;
 	letter-spacing: -2px;
-	margin-top: -30px;
+	margin-top: -40px;
+	margin-left: -10px;
 	font-family: monospace; 
-	font-weight: 700;
+	position:fixed;
+    text-shadow:
+    -3px -3px 0 #000,
+    0px 0px 0 #000,
+    0px 0px 0 #000,
+    3px 3px 0 #000;  
 }
 div.item-menu:hover 
 {
+     transition: color 0.5s ease;
      color:#6744B8; 
      text-decoration:none; 
      cursor:default;  
@@ -26,13 +46,29 @@ div.item-menu:hover
 
 div.texto{
 	width: 800px;
+    height: 80vh; /* For 100% screen height */
     text-align: justify;
+	margin-top: 120px;
+	margin-left: -10px;
     text-justify: inter-word;
 }
 
-blockquote {
+blockquote.left {
 	margin-left:10px;
-	width:40%;
+	margin-right:10px;
+	width:auto;
+	float: left;
+	font-family: monospace; 
+	display: inline;
+	color:#ffffff;
+	border-right: 2px solid #dddddd;
+	padding: 0 0 0 10px;
+	font-size: 2.0em;
+}
+blockquote.right {
+	margin-left:10px;
+	margin-right:10px;
+	width:auto;
 	float: right;
 	font-family: monospace; 
 	display: inline;
@@ -40,6 +76,20 @@ blockquote {
 	border-left: 2px solid #dddddd;
 	padding: 0 0 0 10px;
 	font-size: 2.0em;
+}
+img.left {
+	margin-left:0px;
+	margin-right:10px;
+	width:auto;
+	float: left;
+	padding: 0 0 0 0px;
+}
+img.right {
+	margin-left:10px;
+	margin-right:0px;
+	width:auto;
+	float: right;
+	padding: 0 0 0 10px;
 }
 
 p{
@@ -49,6 +99,45 @@ p{
 	letter-spacing: -2px;
 }
 
+a{
+    color:#6744B8; 
+	font-size: 20px;
+	letter-spacing: 0px;
+	font-family: monospace;
+    text-decoration:none; 
+    cursor:default;
+    font-weight: bold;
+}
+
+a:hover 
+{
+     color:#6744B8; 
+     text-decoration:none; 
+     cursor:default;  
+}
+
+a.linkext{
+    color:#FFE54B; 
+	font-size: 20px;
+	letter-spacing: 0px;
+	font-family: monospace;
+    text-decoration:none; 
+    cursor:default;
+    font-weight: bold;
+}
+a.linkext:hover 
+{
+     transition: color 0.5s ease;
+     color:#6744B8; 
+     text-decoration:none; 
+     cursor:default;  
+}
+
+i{
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
 
 /* CSS - Cascading Style Sheet */
 /* Palette color codes */
