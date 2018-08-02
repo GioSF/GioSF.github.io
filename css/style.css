@@ -1,11 +1,14 @@
 body {
-    background-color: #000000;
+	background-image: url("../img/snb.jpg");
+	background-attachment: fixed;
+/*    background-color: #000000;*/
 }
 
 div.header{
     color: #FF6D4B;
+	font-family: monospace; 
 	font-size: 120px;
-	letter-spacing: -12px;
+	letter-spacing: -23px;
 	margin-top: -150px;
 	margin-left: -9px;
 	position:fixed;
@@ -20,7 +23,7 @@ div.header:hover{
 
 div.menu{
   color: #38C06F;
-	font-size: 30px;
+	font-size: 22px;
 	letter-spacing: -2px;
 	margin-top: -40px;
 	margin-left: -10px;
@@ -43,6 +46,7 @@ div.texto{
 	margin-top: 120px;
 	margin-left: -10px;
     text-justify: inter-word;
+    text-shadow: 0px 0px 5px #000;
 }
 
 blockquote.left {
@@ -56,6 +60,7 @@ blockquote.left {
 	border-right: 2px solid #dddddd;
 	padding: 0 0 0 10px;
 	font-size: 2.0em;
+    text-shadow: 0px 0px 5px #000;
 }
 blockquote.right {
 	margin-left:10px;
@@ -68,6 +73,7 @@ blockquote.right {
 	border-left: 2px solid #dddddd;
 	padding: 0 0 0 10px;
 	font-size: 2.0em;
+    text-shadow: 0px 0px 5px #000;
 }
 img.left {
 	margin-left:0px;
@@ -75,6 +81,7 @@ img.left {
 	width:auto;
 	float: left;
 	padding: 0 0 0 0px;
+    text-shadow: 0px 0px 5px #000;
 }
 img.right {
 	margin-left:10px;
@@ -82,28 +89,33 @@ img.right {
 	width:auto;
 	float: right;
 	padding: 0 0 0 10px;
+    text-shadow: 0px 0px 5px #000;
 }
 
 p{
 	color: #FFE54B;
 	font-size: 22px;
 	font-family: monospace;
-	letter-spacing: -2px;
+	font-weight: bold;
+	letter-spacing: -1px;
+    text-shadow: 0px 0px 5px #000;
 }
 
 a{
-    color:#6744B8; 
+    color:#B3A6D2; 
 	font-size: 20px;
 	letter-spacing: 0px;
 	font-family: monospace;
     text-decoration:none; 
     cursor:default;
     font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
 }
 
 a:hover 
 {
-     color:#6744B8; 
+     transition: color 0.5s ease;
+     color:#fff; 
      text-decoration:none; 
      cursor:default;  
 }
@@ -116,11 +128,12 @@ a.linkext{
     text-decoration:none; 
     cursor:default;
     font-weight: bold;
+    text-shadow: 0px 0px 5px #000;
 }
 a.linkext:hover 
 {
      transition: color 0.5s ease;
-     color:#6744B8; 
+     color:#fff; 
      text-decoration:none; 
      cursor:default;  
 }
@@ -130,6 +143,7 @@ i{
     text-shadow: 0px 0px 0px #ccc;
     font-size: 1.5em;
 	margin-left: 5px;  
+    text-shadow: 0px 0px 5px #000;
 }
 
 /* CSS - Cascading Style Sheet */
