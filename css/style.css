@@ -1,5 +1,5 @@
 body {
-	background-image: url("../img/snb.jpg");
+    background-image: url("../img/snbSmall.jpg"), linear-gradient(to right, #000, #fff);
 	background-attachment: fixed;
 /*    background-color: #000000;*/
 }
