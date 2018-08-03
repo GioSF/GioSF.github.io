@@ -1,10 +1,9 @@
 body {
-	background-image: url("../img/snbSmall.jpg"), linear-gradient(to right, #000, #fff);
-	background-attachment: fixed;
-	/*    background-color: #000000;*/
+background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)), url("../img/snbSmall.jpg");	background-attachment: fixed;
 }
 
 div.header{
+	transition: color 0.5s ease;
 	color: #FF6D4B;
 	font-family: monospace; 
 	font-size: 120px;
@@ -16,9 +15,10 @@ div.header{
 }
 
 div.header:hover{
+	transition: color 0.5s ease;
+	color: #fff;
 	text-decoration:none; 
 	cursor:default;  
-
 }
 
 div.menu{
@@ -39,15 +39,15 @@ div.item-menu{
 div.item-menu:hover 
 {
 	transition: color 0.5s ease;
-	color:#6744B8; 
+	color:#fff; 
 }
 
 div.texto{
-	width: 80vh;
+	width: 100vh;
 	height: 80vh; /* For 100% screen height */
 	text-align: justify;
 	margin-top: 120px;
-	margin-left: -10px;
+	margin-left: -5px;
 	text-justify: inter-word;
 	text-shadow: 0px 0px 5px #000;
 }
@@ -111,7 +111,7 @@ p{
 
 a.email{
 	transition: color 0.5s ease;
-	color:#B3A6D2; 
+	color:#38C06F; 
 	font-size: 20px;
 	letter-spacing: 0px;
 	font-family: monospace;
