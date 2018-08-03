@@ -101,7 +101,8 @@ img.right {
 }
 
 p{
-	color: #FFE54B;
+/*	color: #FFE54B;*/
+	color: #fff;
 	font-size: 22px;
 	font-family: monospace;
 	font-weight: bold;
