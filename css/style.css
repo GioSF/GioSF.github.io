@@ -1,14 +1,14 @@
 body {
-background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)), url("../img/snbSmall.jpg");	background-attachment: fixed;
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)), url("../img/snbSmall.jpg");	background-attachment: fixed;
 }
 
 div.header{
 	transition: color 0.5s ease;
 	color: #FF6D4B;
-	font-family: monospace; 
-	font-size: 120px;
-	letter-spacing: -23px;
-	margin-top: -150px;
+	font-family: 'Cutive Mono', cursive;
+	font-size: 80px;
+	letter-spacing: -16px;
+	margin-top: -90px;
 	margin-left: -9px;
 	position:fixed;
 	text-shadow: 0px 0px 5px #000;
@@ -23,12 +23,14 @@ div.header:hover{
 
 div.menu{
 	color: #38C06F;
-	font-size: 22px;
+	font-size: 18px;
 	letter-spacing: -2px;
-	margin-top: -40px;
+	margin-top: -25px;
 	margin-left: -10px;
-	font-family: monospace; 
-	position:fixed;
+    font-family: 'Cutive Mono', monospace;
+/*    font-family: 'PT Mono', monospace;
+	font-family: 'Nanum Gothic Coding', monospace;
+*/	position:fixed;
 	text-shadow: 0px 0px 5px #000;
 }
 
@@ -43,17 +45,13 @@ div.item-menu:hover
 }
 
 div.texto{
-	width: 100vh;
+	width: 700px;
 	height: 80vh; /* For 100% screen height */
+	font-size: 18px;
 	text-align: justify;
-	margin-top: 120px;
+	margin-top: 70px;
 	margin-left: -5px;
 	text-justify: inter-word;
-	text-shadow: 0px 0px 5px #000;
-}
-
-small{
-	font-size: 15px;
 	text-shadow: 0px 0px 5px #000;
 }
 
@@ -92,7 +90,7 @@ img.left {
 	text-shadow: 0px 0px 5px #000;
 }
 img.right {
-	margin-left:10px;
+	margin-left:0px;
 	margin-right:0px;
 	width:auto;
 	float: right;
@@ -101,11 +99,19 @@ img.right {
 }
 
 p{
-/*	color: #FFE54B;*/
+	/*	color: #FFE54B;*/
 	color: #fff;
-	font-size: 22px;
-	font-family: monospace;
-	font-weight: bold;
+  font-family: 'Cutive Mono', monospace;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-shadow: 0px 0px 5px #000;
+}
+p.small{
+	/*	color: #FFE54B;*/
+	color: #fff;
+	font-size: 13px;
+  font-family: 'Cutive Mono', monospace;
+	font-weight: normal;
 	letter-spacing: -1px;
 	text-shadow: 0px 0px 5px #000;
 }
@@ -113,12 +119,12 @@ p{
 a.email{
 	transition: color 0.5s ease;
 	color:#38C06F; 
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 0px;
-	font-family: monospace;
+  font-family: 'Cutive Mono', monospace;
 	text-decoration:none; 
 	cursor:default;
-	font-weight: bold;
+	font-weight: normal;
 	text-shadow: 0px 0px 5px #000;
 }
 
@@ -133,12 +139,12 @@ a.email:hover
 a.linkext{
 	transition: color 0.5s ease;
 	color:#FFE54B; 
-	font-size: 20px;
+	font-size: 18px;
 	letter-spacing: 0px;
-	font-family: monospace;
+  font-family: 'Cutive Mono', monospace;
 	text-decoration:none; 
 	cursor:default;
-	font-weight: bold;
+	font-weight: normal;
 	text-shadow: 0px 0px 5px #000;
 }
 a.linkext:hover 
