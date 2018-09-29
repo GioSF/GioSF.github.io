@@ -2,156 +2,19 @@
 	background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0)), url("../img/snbSmall.jpg");	background-attachment: fixed;
 	}*/
 
-	@viewport {
-		width: device-width ;
-	  }
+@viewport {
+	width: device-width;
+}
 
-	  @media only screen and (max-width:320px) {
+* {
+    box-sizing: border-box;
+}
 
-		div.caixaGeral {
-			width:320px;
-		}
-		body {
-			background-color: black;
-		}
-	
-		div.header{
-			transition: color 0.5s ease;
-			color: #FF6D4B;
-			font-family: 'Inconsolata', cursive;
-			font-size: 80px;
-			letter-spacing: -16px;
-			margin-top: -90px;
-			margin-left: -9px;
-			position:fixed;
-			text-shadow: 0px 0px 5px #000;
-		}
-	
-		div.header:hover{
-			transition: color 0.5s ease;
-			color: #fff;
-			text-decoration:none; 
-			cursor:default;  
-		}
-	
-		div.menu{
-			color: #000;
-			font-size: 40px;
-			letter-spacing: -1px;
-			margin-top: 10px;
-			margin-left: -12px;
-			font-family: 'Inconsolata', monospace;
-		}
-	
-		div.item-menu{
-			margin-top: 10px;
-			margin-left: 20px;
-			transition: color 0.5s ease;
-		}
-	
-		div.item-menu:hover 
-		{
-			transition: color 0.5s ease;
-			color:#077; 
-		}
-	
-		div.texto{
-			color: #fff;
-			height: 80vh; /* For 100% screen height */
-			font-size: 30px;
-			font-family: 'Inconsolata', monospace;
-			text-align: justify;
-			margin-top: 20px;
-			margin-left: 10px;
-			text-justify: inter-word;
-		}
-	
-		img.left {
-			margin-left:0px;
-			margin-right:10px;
-			width:auto;
-			float: left;
-			padding: 0 0 0 0px;
-		}
-		img.right {
-			margin-left:0px;
-			margin-right:0px;
-			width:auto;
-			float: right;
-			padding: 0 0 0 10px;
-		}
-	
-		p{
-			color: #000;
-			font-size: 17px;
-			margin-left: 30px;
-			font-family: 'Inconsolata', monospace;
-			font-weight: normal;
-			letter-spacing: -1px;
-		}
-		p.small{
-			color: #000;
-			font-size: 13px;
-			font-family: 'Cutive Mono', monospace;
-			font-weight: normal;
-			letter-spacing: -1px;
-		}
-	
-		a.{
-			transition: color 0.5s ease;
-			color:#38C06F; 
-			font-size: 18px;
-			letter-spacing: 0px;
-			font-family: 'Cutive Mono', monospace;
-			text-decoration:none; 
-			cursor:default;
-			font-weight: normal;
-		}
-	
-		a.:hover 
-		{
-			transition: color 0.5s ease;
-			color:#fff; 
-			text-decoration:none; 
-			cursor:default;  
-		}
-	
-		a.linkext{
-			color:#000; 
-			font-size: 17px;
-			letter-spacing: -1px;
-			font-family: 'Inconsolata', monospace;
-			text-decoration:none; 
-			cursor:default;
-			font-weight: normal;
-			transition: color 0.5s ease;
-	
-		}
-		a.linkext:hover 
-		{
-			transition: color 0.5s ease;
-			color:#9F432D; 
-			text-decoration:none; 
-			cursor:default;  
-		}
-	
-		i{
-			color: #000;
-			font-size: 1.5em;
-			margin-left: 5px;  
-		}
+@media only screen and (max-width:320px) {
+	div.caixaGeral {
+		width: 320px;
 	}
-
-	/*
-		FIM DE MEDIA SCREEN 320px-640px
-	*/
-
-
-	body {
-		background-color: black;
-	}
-
-	div.header{
+	div.header {
 		transition: color 0.5s ease;
 		color: #FF6D4B;
 		font-family: 'Inconsolata', cursive;
@@ -159,66 +22,58 @@
 		letter-spacing: -16px;
 		margin-top: -90px;
 		margin-left: -9px;
-		position:fixed;
+		position: fixed;
 		text-shadow: 0px 0px 5px #000;
 	}
-
-	div.header:hover{
+	div.header:hover {
 		transition: color 0.5s ease;
 		color: #fff;
-		text-decoration:none; 
-		cursor:default;  
+		text-decoration: none;
+		cursor: default;
 	}
-
-	div.menu{
+	div.menu {
 		color: #000;
-		font-size: 20px;
+		font-size: 40px;
 		letter-spacing: -1px;
 		margin-top: 10px;
 		margin-left: -12px;
 		font-family: 'Inconsolata', monospace;
 	}
-
-
-	div.item-menu{
+	div.item-menu {
 		margin-top: 10px;
 		margin-left: 20px;
 		transition: color 0.5s ease;
 	}
-
-	div.item-menu:hover 
-	{
+	div.item-menu:hover {
 		transition: color 0.5s ease;
-		color:#077; 
+		color: #077;
 	}
-
-	div.texto{
+	div.texto {
 		color: #fff;
-		height: 80vh; /* For 100% screen height */
-		font-size: 18px;
+		height: 80vh;
+		/* For 100% screen height */
+		font-size: 30px;
 		font-family: 'Inconsolata', monospace;
 		text-align: justify;
 		margin-top: 20px;
 		margin-left: 10px;
 		text-justify: inter-word;
 	}
-
 	img.left {
-		margin-left:0px;
-		margin-right:10px;
-		width:auto;
+		margin-left: 0px;
+		margin-right: 10px;
+		width: auto;
 		float: left;
 		padding: 0 0 0 0px;
 	}
 	img.right {
-		margin-left:0px;
-		margin-right:0px;
-		width:auto;
+		margin-left: 0px;
+		margin-right: 0px;
+		width: auto;
 		float: right;
 		padding: 0 0 0 10px;
 	}
-
-	p{
+	p {
 		color: #000;
 		font-size: 17px;
 		margin-left: 30px;
@@ -226,120 +81,374 @@
 		font-weight: normal;
 		letter-spacing: -1px;
 	}
-	p.small{
+	p.small {
 		color: #000;
 		font-size: 13px;
 		font-family: 'Cutive Mono', monospace;
 		font-weight: normal;
 		letter-spacing: -1px;
 	}
-
-	a.{
+	a. {
 		transition: color 0.5s ease;
-		color:#38C06F; 
+		color: #38C06F;
 		font-size: 18px;
 		letter-spacing: 0px;
 		font-family: 'Cutive Mono', monospace;
-		text-decoration:none; 
-		cursor:default;
+		text-decoration: none;
+		cursor: default;
 		font-weight: normal;
 	}
-
-	a.:hover 
-	{
+	a.:hover {
 		transition: color 0.5s ease;
-		color:#fff; 
-		text-decoration:none; 
-		cursor:default;  
+		color: #fff;
+		text-decoration: none;
+		cursor: default;
 	}
-
-	a.linkext{
-		color:#000; 
+	a.linkext {
+		color: #000;
 		font-size: 17px;
 		letter-spacing: -1px;
 		font-family: 'Inconsolata', monospace;
-		text-decoration:none; 
-		cursor:default;
+		text-decoration: none;
+		cursor: default;
 		font-weight: normal;
 		transition: color 0.5s ease;
-
 	}
-	a.linkext:hover 
-	{
+	a.linkext:hover {
 		transition: color 0.5s ease;
-		color:#9F432D; 
-		text-decoration:none; 
-		cursor:default;  
+		color: #9F432D;
+		text-decoration: none;
+		cursor: default;
 	}
-
-	i{
+	i {
 		color: #000;
 		font-size: 1.5em;
-		margin-left: 5px;  
+		margin-left: 5px;
 	}
+}
 
-	/* CSS - Cascading Style Sheet */
-	/* Palette color codes */
-	/* Palette URL: http://paletton.com/#uid=7091m0kn0jXmP7SmIdUmCqOmCzR */
+/*
+		FIM DE MEDIA SCREEN 320px-640px
+	*/
 
-	/* Feel free to copy&paste color codes to your application */
+body {
+	background-color: black;
+}
 
+div.header {
+	transition: color 0.5s ease;
+	color: #FF6D4B;
+	font-family: 'Inconsolata', cursive;
+	font-size: 80px;
+	letter-spacing: -16px;
+	margin-top: -90px;
+	margin-left: -9px;
+	position: fixed;
+	text-shadow: 0px 0px 5px #000;
+}
 
-	/* As hex codes */
+div.header:hover {
+	transition: color 0.5s ease;
+	color: #fff;
+	text-decoration: none;
+	cursor: default;
+}
 
-	.color-primary-0 { color: #9F432D }	/* Main Primary color */
-	.color-primary-1 { color: #3F1B12 }
-	.color-primary-2 { color: #6F2F20 }
-	.color-primary-3 { color: #D65C3F }
-	.color-primary-4 { color: #FF6D4B }
+div.menu {
+	color: #000;
+	font-size: 20px;
+	letter-spacing: -1px;
+	margin-top: 10px;
+	margin-left: -12px;
+	font-family: 'Inconsolata', monospace;
+}
 
-	.color-secondary-1-0 { color: #9F8E2D }	/* Main Secondary color (1) */
-	.color-secondary-1-1 { color: #3F3812 }
-	.color-secondary-1-2 { color: #6F6320 }
-	.color-secondary-1-3 { color: #D6C03F }
-	.color-secondary-1-4 { color: #FFE54B }
+div.item-menu {
+	margin-top: 10px;
+	margin-left: 20px;
+	transition: color 0.5s ease;
+}
 
-	.color-secondary-2-0 { color: #3C276D }	/* Main Secondary color (2) */
-	.color-secondary-2-1 { color: #18102B }
-	.color-secondary-2-2 { color: #2A1C4C }
-	.color-secondary-2-3 { color: #523692 }
-	.color-secondary-2-4 { color: #6744B8 }
+div.item-menu:hover {
+	transition: color 0.5s ease;
+	color: #077;
+}
 
-	.color-complement-0 { color: #207241 }	/* Main Complement color */
-	.color-complement-1 { color: #0D2D1A }
-	.color-complement-2 { color: #17502E }
-	.color-complement-3 { color: #2D9A59 }
-	.color-complement-4 { color: #38C06F }
+div.texto {
+	color: #fff;
+	height: 80vh;
+	/* For 100% screen height */
+	font-size: 18px;
+	font-family: 'Inconsolata', monospace;
+	text-align: justify;
+	margin-top: 20px;
+	margin-left: 10px;
+	text-justify: inter-word;
+}
 
+img.left {
+	margin-left: 0px;
+	margin-right: 10px;
+	width: auto;
+	float: left;
+	padding: 0 0 0 0px;
+}
 
+img.right {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: auto;
+	float: right;
+	padding: 0 0 0 10px;
+}
 
-	/* As RGBa codes */
+p {
+	color: #000;
+	font-size: 17px;
+	margin-left: 30px;
+	font-family: 'Inconsolata', monospace;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
 
-	.rgba-primary-0 { color: rgba(159, 67, 45,1) }	/* Main Primary color */
-	.rgba-primary-1 { color: rgba( 63, 27, 18,1) }
-	.rgba-primary-2 { color: rgba(111, 47, 32,1) }
-	.rgba-primary-3 { color: rgba(214, 92, 63,1) }
-	.rgba-primary-4 { color: rgba(255,109, 75,1) }
+p.small {
+	color: #000;
+	font-size: 13px;
+	font-family: 'Cutive Mono', monospace;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
 
-	.rgba-secondary-1-0 { color: rgba(159,142, 45,1) }	/* Main Secondary color (1) */
-	.rgba-secondary-1-1 { color: rgba( 63, 56, 18,1) }
-	.rgba-secondary-1-2 { color: rgba(111, 99, 32,1) }
-	.rgba-secondary-1-3 { color: rgba(214,192, 63,1) }
-	.rgba-secondary-1-4 { color: rgba(255,229, 75,1) }
+a. {
+	transition: color 0.5s ease;
+	color: #38C06F;
+	font-size: 18px;
+	letter-spacing: 0px;
+	font-family: 'Cutive Mono', monospace;
+	text-decoration: none;
+	cursor: default;
+	font-weight: normal;
+}
 
-	.rgba-secondary-2-0 { color: rgba( 60, 39,109,1) }	/* Main Secondary color (2) */
-	.rgba-secondary-2-1 { color: rgba( 24, 16, 43,1) }
-	.rgba-secondary-2-2 { color: rgba( 42, 28, 76,1) }
-	.rgba-secondary-2-3 { color: rgba( 82, 54,146,1) }
-	.rgba-secondary-2-4 { color: rgba(103, 68,184,1) }
+a.:hover {
+	transition: color 0.5s ease;
+	color: #fff;
+	text-decoration: none;
+	cursor: default;
+}
 
-	.rgba-complement-0 { color: rgba( 32,114, 65,1) }	/* Main Complement color */
-	.rgba-complement-1 { color: rgba( 13, 45, 26,1) }
-	.rgba-complement-2 { color: rgba( 23, 80, 46,1) }
-	.rgba-complement-3 { color: rgba( 45,154, 89,1) }
-	.rgba-complement-4 { color: rgba( 56,192,111,1) }
+a.linkext {
+	color: #000;
+	font-size: 17px;
+	letter-spacing: -1px;
+	font-family: 'Inconsolata', monospace;
+	text-decoration: none;
+	cursor: default;
+	font-weight: normal;
+	transition: color 0.5s ease;
+}
 
+a.linkext:hover {
+	transition: color 0.5s ease;
+	color: #9F432D;
+	text-decoration: none;
+	cursor: default;
+}
 
+i {
+	color: #000;
+	font-size: 1.5em;
+	margin-left: 5px;
+}
 
-	/* Generated by Paletton.com Â© 2002-2014 */
+/* CSS - Cascading Style Sheet */
+
+/* Palette color codes */
+
+/* Palette URL: http://paletton.com/#uid=7091m0kn0jXmP7SmIdUmCqOmCzR */
+
+/* Feel free to copy&paste color codes to your application */
+
+/* As hex codes */
+
+.color-primary-0 {
+	color: #9F432D
+}
+
+/* Main Primary color */
+
+.color-primary-1 {
+	color: #3F1B12
+}
+
+.color-primary-2 {
+	color: #6F2F20
+}
+
+.color-primary-3 {
+	color: #D65C3F
+}
+
+.color-primary-4 {
+	color: #FF6D4B
+}
+
+.color-secondary-1-0 {
+	color: #9F8E2D
+}
+
+/* Main Secondary color (1) */
+
+.color-secondary-1-1 {
+	color: #3F3812
+}
+
+.color-secondary-1-2 {
+	color: #6F6320
+}
+
+.color-secondary-1-3 {
+	color: #D6C03F
+}
+
+.color-secondary-1-4 {
+	color: #FFE54B
+}
+
+.color-secondary-2-0 {
+	color: #3C276D
+}
+
+/* Main Secondary color (2) */
+
+.color-secondary-2-1 {
+	color: #18102B
+}
+
+.color-secondary-2-2 {
+	color: #2A1C4C
+}
+
+.color-secondary-2-3 {
+	color: #523692
+}
+
+.color-secondary-2-4 {
+	color: #6744B8
+}
+
+.color-complement-0 {
+	color: #207241
+}
+
+/* Main Complement color */
+
+.color-complement-1 {
+	color: #0D2D1A
+}
+
+.color-complement-2 {
+	color: #17502E
+}
+
+.color-complement-3 {
+	color: #2D9A59
+}
+
+.color-complement-4 {
+	color: #38C06F
+}
+
+/* As RGBa codes */
+
+.rgba-primary-0 {
+	color: rgba(159, 67, 45, 1)
+}
+
+/* Main Primary color */
+
+.rgba-primary-1 {
+	color: rgba( 63, 27, 18, 1)
+}
+
+.rgba-primary-2 {
+	color: rgba(111, 47, 32, 1)
+}
+
+.rgba-primary-3 {
+	color: rgba(214, 92, 63, 1)
+}
+
+.rgba-primary-4 {
+	color: rgba(255, 109, 75, 1)
+}
+
+.rgba-secondary-1-0 {
+	color: rgba(159, 142, 45, 1)
+}
+
+/* Main Secondary color (1) */
+
+.rgba-secondary-1-1 {
+	color: rgba( 63, 56, 18, 1)
+}
+
+.rgba-secondary-1-2 {
+	color: rgba(111, 99, 32, 1)
+}
+
+.rgba-secondary-1-3 {
+	color: rgba(214, 192, 63, 1)
+}
+
+.rgba-secondary-1-4 {
+	color: rgba(255, 229, 75, 1)
+}
+
+.rgba-secondary-2-0 {
+	color: rgba( 60, 39, 109, 1)
+}
+
+/* Main Secondary color (2) */
+
+.rgba-secondary-2-1 {
+	color: rgba( 24, 16, 43, 1)
+}
+
+.rgba-secondary-2-2 {
+	color: rgba( 42, 28, 76, 1)
+}
+
+.rgba-secondary-2-3 {
+	color: rgba( 82, 54, 146, 1)
+}
+
+.rgba-secondary-2-4 {
+	color: rgba(103, 68, 184, 1)
+}
+
+.rgba-complement-0 {
+	color: rgba( 32, 114, 65, 1)
+}
+
+/* Main Complement color */
+
+.rgba-complement-1 {
+	color: rgba( 13, 45, 26, 1)
+}
+
+.rgba-complement-2 {
+	color: rgba( 23, 80, 46, 1)
+}
+
+.rgba-complement-3 {
+	color: rgba( 45, 154, 89, 1)
+}
+
+.rgba-complement-4 {
+	color: rgba( 56, 192, 111, 1)
+}
+
+/* Generated by Paletton.com Â© 2002-2014 */
+
 /* http://paletton.com */
