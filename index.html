@@ -6,31 +6,60 @@
 <meta charset="utf-8"/>
 <head>
     <title>MindStorming</title>
+    <script type="text/javascript" src="js/myScripts.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|PT+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|PT+Mono|Inconsolata|Source+Code+Pro" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="header" onclick="loadDoc('inicio')">MindStorming
-    </div>
+
     <div class="menu">
-        <table>
-            <tr>
-                <th><div class="item-menu" onclick="loadDoc('pesquisas')">Pesquisa</div></th>
-                <th><div class="item-menu" onclick="loadDoc('projetos')">Projetos</div></th>
-            </tr>
-        </table>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="item-menu" onclick="loadDoc('inicio')">MindStorming
+                    </div>
+                </div>
+
+                <ul class="nav navbar-nav">
+
+                  <li class="active">
+                    <div class="item-menu" onclick="loadDoc('projetos')">Projetos</div>
+                </li>
+
+                <li class="dropdown">
+
+                    <div class="dropdown-toggle item-menu" data-toggle="dropdown">Pesquisa<span class="caret"></span></div>
+
+                    <ul class="dropdown-menu">
+
+                        <li><div class="item-menu" onclick="loadDoc('resenhasIndex')">Resenhas</div>
+                        </li>
+
+                        <li><div class="item-menu" onclick="loadDoc('publicacoes')">Publicações</div>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="texto" id="conteudo">
-        <p>Sou Giovanni Stroppa Faquin, graduando em Sistemas de 
-        Informação pelo IFSudesteMG. Esta é uma página sobre minhas pesquisas e projetos.</p>
-        <i class="fab fa-github"></i><a class="email" target="_blank" rel="noopener noreferrer" href="https://github.com/GioSF/"> github.com/GioSF/</a>
-        <br>
-        <i class="far fa-envelope"></i><a class="email"> giosfdev@gmail.com</a>
-        <p class="small">Fonte da imagem: Intel</small></p>
-        <p class="small">Copyright 2018 por Giovanni Stroppa Faquin</small></p>
-    </div>
+
+</div>
+</nav>
+
+<div id="conteudo">
+    <p>Sou Giovanni Stroppa Faquin, graduando em Sistemas de 
+    Informação pelo IFSudesteMG. Esta é uma página sobre minhas pesquisas e projetos.</p>
+    <i class="fab fa-github"></i><a class="linkext" target="_blank" rel="noopener noreferrer" href="https://github.com/GioSF/"> github.com/GioSF/</a>
+    <br>
+    <i class="far fa-envelope"></i><a class="linkext"> giosfdev@gmail.com</a>
+    <p class="small">Copyright 2018 por Giovanni Stroppa Faquin</p>
+</div>
     <!--             <blockquote>Make other monospace text stand out!</blockquote>
     -->
     <script>
@@ -38,12 +67,12 @@
           var xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-             document.getElementById("conteudo").innerHTML = this.responseText;
-         }
-     };
-     xhttp.open("GET", "ajax/" + $var + ".html", true);
-     xhttp.send();
- }
+               document.getElementById("conteudo").innerHTML = this.responseText;
+           }
+       };
+       xhttp.open("GET", "ajax/" + $var + ".html", true);
+       xhttp.send();
+   }
 </script>
 </body>
 </html>
