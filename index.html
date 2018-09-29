@@ -7,6 +7,7 @@
 
 <head>
     <title>MindStorming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="js/myScripts.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,55 +20,59 @@
 
 <body>
 
-    <div class="menu">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="item-menu" onclick="loadDoc('inicio')">MindStorming
+    <div class="caixaGeral">
+        <div class="menu">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="item-menu" onclick="loadDoc('inicio')">MindStorming
+                        </div>
                     </div>
+
+                    <ul class="nav navbar-nav">
+
+                        <li class="active">
+                            <div class="item-menu" onclick="loadDoc('projetos')">Projetos</div>
+                        </li>
+
+                        <li class="dropdown">
+
+                            <div class="dropdown-toggle item-menu" data-toggle="dropdown">Pesquisa<span class="caret"></span></div>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <div class="item-menu" onclick="loadDoc('resenhasIndex')">Resenhas</div>
+                                </li>
+
+                                <li>
+                                    <div class="item-menu" onclick="loadDoc('publicacoes')">Publicações</div>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+        </div>
 
-                <ul class="nav navbar-nav">
 
-                    <li class="active">
-                        <div class="item-menu" onclick="loadDoc('projetos')">Projetos</div>
-                    </li>
-
-                    <li class="dropdown">
-
-                        <div class="dropdown-toggle item-menu" data-toggle="dropdown">Pesquisa<span class="caret"></span></div>
-
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <div class="item-menu" onclick="loadDoc('resenhasIndex')">Resenhas</div>
-                            </li>
-
-                            <li>
-                                <div class="item-menu" onclick="loadDoc('publicacoes')">Publicações</div>
-                            </li>
-
-                        </ul>
-                    </li>
-                </ul>
+        <div class="texto">
+            <div id="conteudo">
+                <p>Sou Giovanni Stroppa Faquin, graduando em Sistemas de
+                    Informação pelo IFSudesteMG. Esta é uma página sobre minhas pesquisas e projetos.</p>
+                <i class="fab fa-github"></i><a class="linkext" target="_blank" rel="noopener noreferrer" href="https://github.com/GioSF/">
+                    github.com/GioSF/</a>
+                <br>
+                <i class="far fa-envelope"></i><a class="linkext"> giosfdev@gmail.com</a>
+                <p class="small">Copyright 2018 por Giovanni Stroppa Faquin</p>
             </div>
-        </nav>
-    </div>
-
-
-    <div class="texto">
-        <div id="conteudo">
-            <p>Sou Giovanni Stroppa Faquin, graduando em Sistemas de
-                Informação pelo IFSudesteMG. Esta é uma página sobre minhas pesquisas e projetos.</p>
-            <i class="fab fa-github"></i><a class="linkext" target="_blank" rel="noopener noreferrer" href="https://github.com/GioSF/">
-                github.com/GioSF/</a>
-            <br>
-            <i class="far fa-envelope"></i><a class="linkext"> giosfdev@gmail.com</a>
-            <p class="small">Copyright 2018 por Giovanni Stroppa Faquin</p>
         </div>
     </div>
+
     <!--             <blockquote>Make other monospace text stand out!</blockquote>
     -->
+
     <script>
         function loadDoc($var) {
             var xhttp = new XMLHttpRequest();
